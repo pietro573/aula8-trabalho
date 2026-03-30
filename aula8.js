@@ -45,10 +45,46 @@ const jogo = [
     ano:'2004 pra arcade e 2005  pra play station2 ',
     genero:'luta', 
     sinopse: 'nesse jogo você controla um dos 9 mercenarios contratados para conquistar o terreno do time adversario numa luta interminavel entre dois irmãos bluetarch manne redmon mann ',
-    preco:'gratis na steam',
+    preco:'gratis na steam'
 
 },
 
+{
+    jogo: 'beamNG drive',
+    autor: 'BeamNG GmbH',
+    ano:'29 de maio de 2015',
+    genero:'Estilo: Simulação, "Soft-body physics"', 
+    sinopse: 'escolha um carro um mapa e teste suas habilidades de motorista',
+    preco:'steam 24,99 ',
+
+},
+{
+    jogo: 'happy wheels',
+    autor: 'Jim Bonacci',
+    ano:'4 de junho de 2010',
+    genero:' rolagem lateral e baseado em física', 
+    sinopse: ' existem varios niveis pra você se divertir com pula pulas, bicicletas e muito mais',
+    preco:'de graça na play store e existe um site ',
+
+},
+{
+    jogo: 'UESB but better',
+    autor: ' Richalala_oficial',
+    ano:'4 de julho de 2024',
+    genero:'bullet hell', 
+    sinopse: ' nesse jogo você luta contra a versão corrompida do sans de undertale que vira algo como um virus de computador com seus arquivos totalmente corrompidos',
+    preco:' degraça na game jolt',
+
+},
+{
+    jogo: '',
+    autor: '',
+    ano:'',
+    genero:'', 
+    sinopse: ' ',
+    preco:'',
+
+},
 {
     jogo: '',
     autor: '',
