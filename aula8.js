@@ -1,4 +1,4 @@
-const jogo = [
+const jogos = [
 
 {
     jogo: 'just shapes and beats', 
@@ -77,26 +77,27 @@ const jogo = [
 
 },
 {
-    jogo: '',
-    autor: '',
-    ano:'',
-    genero:'', 
-    sinopse: ' ',
-    preco:'',
+    jogo: 'God of War Ragnarok',
+    autor: 'Matt Sophos e Richard Gaubert',
+    ano:'9 de novembro de 2022',
+    genero:'ação-aventura com fortes elementos de RPG e combate hack and slash', 
+    sinopse: 'God of War Ragnarök é um jogo de ação e aventura onde os jogadores assumem o papel de Kratos e seu filho em uma jornada para impedir a chegada do Ragnarök. ',
+    preco:'59,99 ',
 
 },
 {
-    jogo: '',
-    autor: '',
-    ano:'',
-    genero:'', 
-    sinopse: ' ',
-    preco:'',
+    jogo: 'garrys mod',
+    autor: 'valve',
+    ano:'29 de novembro de 2006',
+    genero:'simulador sandbox', 
+    sinopse: 'Garrys Mod (GMod) é um jogo sandbox de física sem objetivos predefinidos, focado na criatividade e manipulação de objetos. Os jogadores utilizam ferramentas para criar engenhocas, veículos ou manipular personagens (ragdolls) no motor Source. É um ambiente livre onde a comunidade cria seus próprios minigames, mods e conteúdos',
+    preco:'9,99',
 
 },
 ]
-const jogosJSON = JSON.stringify(jogo)
-console.log(jogo)
+
+const jogosJSON = JSON.stringify(jogos)
+console.log(jogos)
 console.log(jogosJSON)
 console.log([0].jogo)
 console.log(jogosJSON)
@@ -104,12 +105,25 @@ console.log(jogosJSON)
 const jogosOBJ = JSON .parse(jogosJSON)
 console.log(jogosOBJ)
 
+
 function criaArquivos(obj){
     const dadosJSON = JSON.stringify(obj)
     const fs = require('fs')
     fs.writeFileSync('jogos.json', dadosJSON)
 }
+function mostrarJogos()
 
-criaArquivos(jogo);S
+console.log("------------------------")
+
+
+criaArquivos(jogos);
 const arquivo = require('./jogos.json')
 console.log(arquivo)
+
+function adicionarJogo(jogo){
+    jogos.push(jogo)
+    console.log("adicionamos o " + jogo)
+}
+ 
+adicionarJogo('pizza tower', 19_99, 26_1_2023)
+mostrarJogos()
