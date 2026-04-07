@@ -41,7 +41,7 @@ const jogos = [
 
 {
     jogo: 'tekken 5',
-    autor: 'valve',
+    autor: 'Masahiro Kimoto',
     ano:'2004 pra arcade e 2005  pra play station2 ',
     genero:'luta', 
     sinopse: 'nesse jogo você controla um dos 9 mercenarios contratados para conquistar o terreno do time adversario numa luta interminavel entre dois irmãos bluetarch manne redmon mann ',
