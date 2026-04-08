@@ -111,19 +111,33 @@ function criaArquivos(obj){
     const fs = require('fs')
     fs.writeFileSync('jogos.json', dadosJSON)
 }
-function mostrarJogos()
-
-console.log("------------------------")
-
-
 criaArquivos(jogos);
 const arquivo = require('./jogos.json')
 console.log(arquivo)
+
+
+function mostrarJogos(game){
+    console.log(game)
+}
+
+mostrarJogos(jogos)
+
+console.log("------------------------")
+
 
 function adicionarJogo(jogo){
     jogos.push(jogo)
     console.log("adicionamos o " + jogo)
 }
  
-adicionarJogo('pizza tower', 19_99, 26_1_2023)
-mostrarJogos()
+adicionarJogo(
+    
+    'jogo: 'pizza tower',
+    autor: 'tour de pizza',
+    ano:'26-1-2023',
+    genero:'plataforma 2D de ação e ritmo acelerado', 
+    sinopse: 'Você controla Peppino Spaghetti, um pizzaiolo italiano calvo, robusto e covarde que precisa salvar seu restaurante da destruição. O vilão, Pizzaface, uma pizza senciente, ameaça explodir o estabelecimento com um laser gigante localizado no topo da "Pizza Tower".',
+    preco:'19_99'', 
+    
+    )
+mostrarJogos(jogos)
