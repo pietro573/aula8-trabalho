@@ -7,17 +7,16 @@ const jogos = [
     ano:'31 de maio de 2018', 
     genero:'Bullet-hell musical / Jogo de ritmo.', 
     sinopse: 'O jogo apresenta uma narrativa simples no modo história, onde você guia o protagonista (um pequeno cubo) através de um mundo corrompido, enfrentando "batidas" e obstáculos perigosos, com o objetivo de sobreviver e restaurar a ordem.',
-    preco:'R$ 50,00',
+    preco:'R$ 50,00'
 
 },
-
 {
     jogo: 'plants vs zombies1',
     autor: 'pop cap',
     ano:'5 de maio 2009',
-    genero:'tower defense', 
+    genero:'tower defense',
     sinopse: 'nesse jogo você está no meio de um apocalipse zumbi onde sua unica forma de sobreviver é usando plantas especiais no seu jardim para conter as ameaças, coma ajuda de seu vizinho crazy dave que te auxiliara em algumas fases explicando o que fazer ',
-    preco:' gratis no mobile e PC',
+    preco:' gratis no mobile e PC'
 
 },
 
@@ -27,7 +26,7 @@ const jogos = [
     ano:'18 de fevereiro de 2026',
     genero:'terror', 
     sinopse: 'apos todos os perigos enfrentados você agora está nos laboratorios da fabrica e novos inimigos e aliados te esperam para tentar por um ponto final nessa história ',
-    preco:'19,99 na steam',
+    preco:'19,99 na steam'
 },
 
 {
@@ -36,7 +35,7 @@ const jogos = [
     ano:'10 de outubro de 2007',
     genero:'hero shooter', 
     sinopse: 'nesse jogo você controla um dos 9 mercenarios contratados para conquistar o terreno do time adversario ',
-    preco:'gratis na steam',
+    preco:'gratis na steam'
 
 },
 
@@ -56,7 +55,7 @@ const jogos = [
     ano:'29 de maio de 2015',
     genero:'Estilo: Simulação, "Soft-body physics"', 
     sinopse: 'escolha um carro um mapa e teste suas habilidades de motorista',
-    preco:'steam 24,99 ',
+    preco:'steam 24,99 '
 
 },
 {
@@ -65,7 +64,7 @@ const jogos = [
     ano:'4 de junho de 2010',
     genero:' rolagem lateral e baseado em física', 
     sinopse: ' existem varios niveis pra você se divertir com pula pulas, bicicletas e muito mais',
-    preco:'de graça na play store e existe um site ',
+    preco:'de graça na play store e existe um site '
 
 },
 {
@@ -74,7 +73,7 @@ const jogos = [
     ano:'4 de julho de 2024',
     genero:'bullet hell', 
     sinopse: ' nesse jogo você luta contra a versão corrompida do sans de undertale que vira algo como um virus de computador com seus arquivos totalmente corrompidos',
-    preco:' degraça na game jolt',
+    preco:' degraça na game jolt'
 
 },
 {
@@ -83,7 +82,7 @@ const jogos = [
     ano:'9 de novembro de 2022',
     genero:'ação-aventura com fortes elementos de RPG e combate hack and slash', 
     sinopse: 'God of War Ragnarök é um jogo de ação e aventura onde os jogadores assumem o papel de Kratos e seu filho em uma jornada para impedir a chegada do Ragnarök. ',
-    preco:'59,99 ',
+    preco:'59,99 '
 
 },
 {
@@ -92,7 +91,7 @@ const jogos = [
     ano:'29 de novembro de 2006',
     genero:'simulador sandbox', 
     sinopse: 'Garrys Mod (GMod) é um jogo sandbox de física sem objetivos predefinidos, focado na criatividade e manipulação de objetos. Os jogadores utilizam ferramentas para criar engenhocas, veículos ou manipular personagens (ragdolls) no motor Source. É um ambiente livre onde a comunidade cria seus próprios minigames, mods e conteúdos',
-    preco:'9,99',
+    preco:'9,99'
 
 },
 ]
@@ -128,9 +127,9 @@ function lerArquivos(){
 
 }
 
-lerArquivos()
+lerArquivos();
 
-mostrarJogos(jogos)
+mostrarJogos(jogos);
 
 console.log("------------------------")
 
@@ -138,7 +137,7 @@ console.log("------------------------")
 function adicionarJogo(jogo){
     jogos.push(jogo)
     console.log("adicionamos o jogo pizza tower")
-}
+};
  
 adicionarJogo(
     {
@@ -147,7 +146,12 @@ adicionarJogo(
     ano:'26-1-2023',
     genero:'plataforma 2D de ação e ritmo acelerado', 
     sinopse: 'Você controla Peppino Spaghetti, um pizzaiolo italiano calvo, robusto e covarde que precisa salvar seu restaurante da destruição. O vilão, Pizzaface, uma pizza senciente, ameaça explodir o estabelecimento com um laser gigante localizado no topo da "Pizza Tower".',
-    preco:'19_99', 
+    preco:'19_99'
 }
-    )
-mostrarJogos(arquivo)
+    );
+
+criaArquivos(jogos);
+
+lerArquivos();
+
+mostrarJogos(arquivo);
